@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  background-color: lightgray; }
+
+.header {
+  background-image: linear-gradient(to right, #050031, #bcb7cc);
+  padding: 2rem;
+  border: 1px solid black; }
+  .header #header__titulo {
+    margin: 3rem;
+    font-size: 7rem;
+    text-align: center;
+    height: 15vh;
+    line-height: 15vh;
+    color: #050031;
+    font-family: 'Niconne', cursive;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px #1100ff,  10px 10px 0px #2617fc,  15px 15px 0px #1653fc,  20px 20px 0px #4f72a0,  25px 25px 0px #717ebb,  30px 30px 0px #bcb7cc;
+    transform: translateY(-3rem);
+    animation: slideDown 0.5s ease-in 1 forwards; }
+  .header .header__subtitulo {
+    color: darkgray;
+    font-family: "Roboto", sans-serif;
+    padding-left: 2rem; }
+  .header .header__flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .header .header__flexbox .dropdown {
+      display: inline;
+      padding: 1rem; }
+
+@keyframes slideDown {
+  from {
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
+#grilla {
+  display: grid;
+  grid-template-areas: "header header header" "productos productos productos";
+  grid-template-rows: 350px 1fr;
+  grid-template-columns: 20% auto 15%; }
+  #grilla .grilla__flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    #grilla .grilla__flexbox .dropdown {
+      display: inline;
+      padding: 1rem; }
+  #grilla header {
+    grid-area: header; }
+  #grilla section#productos {
+    grid-area: productos; }
+  #grilla .grilla__carrousel {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    left: 25vw;
+    top: 12vh; }
+
+@media only screen and (min-width: 768px) {
+  #grilla {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media only screen and (min-width: 1024px) {
+  #grilla {
+    grid-template-columns: repeat(3, 1fr); } }
+
+.personal {
+  background-image: url("../imagenes/fondo sonrisas.jpg");
+  background-size: cover;
+  padding: 2rem;
+  height: 600px; }
+  .personal .personal__flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .personal .personal__flexbox .flexbox__flexitem {
+      background-color: rgba(250, 235, 215, 0.75);
+      border-radius: 5px;
+      padding: 3px;
+      width: 400px;
+      height: 400px;
+      border-style: solid;
+      border-color: black;
+      margin: 5px; }
+      .personal .personal__flexbox .flexbox__flexitem:hover {
+        transform: scale(1.02, 1.02);
+        align-content: center;
+        box-shadow: -1px 1px 2px lightgray; }
+      .personal .personal__flexbox .flexbox__flexitem .flexitem__tabla {
+        padding-top: 150px; }
+        .personal .personal__flexbox .flexbox__flexitem .flexitem__tabla .tabla__nombreProducto {
+          font-family: "Roboto", sans-serif;
+          font-size: 4rem;
+          color: #050031; }
+        .personal .personal__flexbox .flexbox__flexitem .flexitem__tabla .tabla__caracteristicas {
+          list-style-type: none;
+          font-family: "Open Sans", sans-serif;
+          font-size: large;
+          color: #2617fc; }
+
+.telecom {
+  background-image: url("../imagenes/fondo telecom.jpeg");
+  background-size: cover;
+  padding: 2rem;
+  height: 600px; }
+  .telecom .telecom__flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .telecom .telecom__flexbox .flexbox__flexitem {
+      background-color: rgba(250, 235, 215, 0.75);
+      border-radius: 5px;
+      padding: 3px;
+      width: 400px;
+      height: 400px;
+      border-style: solid;
+      border-color: black;
+      margin: 5px; }
+      .telecom .telecom__flexbox .flexbox__flexitem:hover {
+        transform: scale(1.02, 1.02);
+        align-content: center;
+        box-shadow: -1px 1px 2px lightgray; }
+      .telecom .telecom__flexbox .flexbox__flexitem .flexitem__tabla {
+        padding-top: 150px; }
+        .telecom .telecom__flexbox .flexbox__flexitem .flexitem__tabla .tabla__nombreProducto {
+          font-family: "Roboto", sans-serif;
+          font-size: 4rem;
+          color: #050031; }
+        .telecom .telecom__flexbox .flexbox__flexitem .flexitem__tabla .tabla__caracteristicas {
+          list-style-type: none;
+          font-family: "Open Sans", sans-serif;
+          font-size: large;
+          color: #2617fc; }
+
+.fibertel {
+  background-image: url("../imagenes/fondo fibertel.jpg");
+  background-size: cover;
+  padding: 2rem;
+  height: 600px; }
+  .fibertel .fibertel__flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .fibertel .fibertel__flexbox .flexbox__flexitem {
+      background-color: rgba(250, 235, 215, 0.75);
+      border-radius: 5px;
+      padding: 3px;
+      width: 400px;
+      height: 400px;
+      border-style: solid;
+      border-color: black;
+      margin: 5px; }
+      .fibertel .fibertel__flexbox .flexbox__flexitem:hover {
+        transform: scale(1.02, 1.02);
+        align-content: center;
+        box-shadow: -1px 1px 2px lightgray; }
+      .fibertel .fibertel__flexbox .flexbox__flexitem .flexitem__tabla {
+        padding-top: 150px; }
+        .fibertel .fibertel__flexbox .flexbox__flexitem .flexitem__tabla .tabla__nombreProducto {
+          font-family: "Roboto", sans-serif;
+          font-size: 4rem;
+          color: #050031; }
+        .fibertel .fibertel__flexbox .flexbox__flexitem .flexitem__tabla .tabla__caracteristicas {
+          list-style-type: none;
+          font-family: "Open Sans", sans-serif;
+          font-size: large;
+          color: #2617fc; }
+
+.cablevision {
+  background-image: url("../imagenes/fondo tele.jpg");
+  background-size: cover;
+  padding: 2rem;
+  height: 600px; }
+  .cablevision .cablevision__flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .cablevision .cablevision__flexbox .flexbox__flexitem {
+      background-color: rgba(250, 235, 215, 0.75);
+      border-radius: 5px;
+      padding: 3px;
+      width: 400px;
+      height: 400px;
+      border-style: solid;
+      border-color: black;
+      margin: 5px; }
+      .cablevision .cablevision__flexbox .flexbox__flexitem:hover {
+        transform: scale(1.02, 1.02);
+        align-content: center;
+        box-shadow: -1px 1px 2px lightgray; }
+      .cablevision .cablevision__flexbox .flexbox__flexitem .flexitem__tabla {
+        padding-top: 150px; }
+        .cablevision .cablevision__flexbox .flexbox__flexitem .flexitem__tabla .tabla__nombreProducto {
+          font-family: "Roboto", sans-serif;
+          font-size: 4rem;
+          color: #050031; }
+        .cablevision .cablevision__flexbox .flexbox__flexitem .flexitem__tabla .tabla__caracteristicas {
+          list-style-type: none;
+          font-family: "Open Sans", sans-serif;
+          font-size: large;
+          color: #2617fc; }

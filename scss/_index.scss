@@ -1,0 +1,51 @@
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "productos productos productos";
+    grid-template-rows: 350px 1fr; 
+    grid-template-columns: 20% auto 15%;
+
+    .grilla__flexbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .dropdown{
+            display: inline;
+            padding: 1rem;
+        }
+    }
+
+    header {
+        grid-area: header;
+     }
+    
+    section#productos {
+        grid-area: productos;     
+     }
+
+    .grilla__carrousel{
+        position: relative;
+        width: 50vw;
+        height: 50vh;
+        left: 25vw;
+        top: 12vh;
+    }
+ }
+
+ @media only screen and (min-width: 768px) {
+    #grilla {
+            grid-template-columns: repeat(4, 1fr);
+      }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+    #grilla {
+            grid-template-columns: repeat(3, 1fr);
+      }
+}
+
+

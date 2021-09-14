@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: lightgray;
+  }
+
+header{
+    background-image: linear-gradient(to right, #050031, #bcb7cc);
+    padding: 2rem;
+}
+
+#titulo {
+    margin: 3rem;
+    font-size: 7rem;
+    text-align: center;
+    height: 15vh;
+    line-height: 15vh;
+    color: #050031; 
+    font-family: 'Niconne', cursive;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px #1100ff, 
+                10px 10px 0px #2617fc, 
+                15px 15px 0px #1653fc, 
+                20px 20px 0px #4f72a0, 
+                25px 25px 0px #717ebb, 
+                30px 30px 0px #bcb7cc;
+    transform: translateY(-3rem);
+    animation: slideDown 0.5s ease-in 1 forwards;
+}
+
+@keyframes slideDown {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+h2 {
+    color: darkgray;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2rem;
+}
+
+.listaEnlaces{
+    text-align: center;
+}
+
+.link {
+    background-color: #1653fc;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+}
+.link:hover .subLista{
+    display: block;
+}
+
+.dropdown{
+    display: inline;
+    padding: 1rem;
+}
+
+.subLista{
+    list-style-type: none;
+    background-color: #2196f3;
+    display: none;
+    position: absolute;
+    padding: 1rem;
+    width: 82.5%;
+    left: 0;
+    top: 5.3rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a{
+    padding: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #050031;
+}
+
+.nombreProducto{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 4rem;
+    color: #050031;
+}
+
+.nombreProductoFibertel{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 4rem;
+    color: white;
+}
+.nombreProductoFlow{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 4rem;
+    color: #57dfb7;
+}
+
+.caracteristicas{
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #2617fc;
+}
+
+.caracteristicasFlow{
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #57dfb7;
+    padding-left: 4rem;
+}
+
+.seccionTelecom{
+    background-image:url(../Clase\ 11/imagenes/fondo\ telecom.jpeg);
+    background-size: cover;
+    padding: 2rem;
+    height: 600px;
+}
+
+.contenedorTelecom{
+    background-color: rgba(250, 235, 215, 0.75);
+    border-radius: 5px;
+    padding: 3px;
+    width: 400px;
+    height: 400px;
+    border-style: solid;
+    border-color: black;
+}
+
+.contenedorPersonal{
+    background-color: rgba(250, 235, 215, 0.75);
+    border-radius: 5px;
+    padding: 3px;
+    width: 400px;
+    height: 400px;
+    border-style: solid;
+    border-color: black;
+    margin: 5px;
+}
+
+.contenedorPersonal:hover{
+    transform: scale(1.02,1.02);
+    align-content: center;
+    box-shadow: -1px 1px 2px lightgray;
+}
+
+.contenedorTelecom:hover{
+    transform: scale(1.02,1.02);
+    align-content: center;
+    box-shadow: -1px 1px 2px lightgray;
+}
+
+.contenedorFibertel{
+    background-color: rgba(155, 155, 255, 0.75);
+    border-radius: 5px;
+    padding: 3px;
+    width: 400px;
+    height: 400px;
+    border-style: solid;
+    border-color: black;
+    margin: 5px;
+}
+
+.contenedorFibertel:hover{
+    transform: scale(1.02,1.02);
+    align-content: center;
+    box-shadow: -1px 1px 2px lightgray;
+}
+
+.seccionPersonal{
+    background-image: url(../Clase\ 11/imagenes/fondo\ sonrisas.jpg);
+    background-size: cover;
+    padding: 2rem;
+    height: 600px;
+}
+
+.seccionFibertel{
+    background-image: url(../Clase\ 11/imagenes/fondo\ fibertel.jpg);
+    background-size: cover;
+    padding: 2rem;
+    height: 600px;
+}
+
+.seccionFlow{
+    background-image: url(../Clase\ 11/imagenes/fondo\ tele.jpg);
+    background-size: cover;
+    padding: 2rem;
+    height: 600px;
+}
+
+.tablaTelecom{
+    padding-top: 150px;
+}
+
+.tablaFibertel{
+    padding-top: 50px;
+}
+
+footer{
+    padding: 2rem;
+    background-color: #2196f3;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    column-gap: 25px;
+    justify-content: space-between;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "productos productos productos";
+    grid-template-rows: 350px 1fr; 
+    grid-template-columns: 20% auto 15%;
+ }
+
+.carrousel{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    left: 25vw;
+    top: 12vh;
+}
+
+ .border {
+    border: 1px solid black;
+ }
+ 
+ header {
+    grid-area: header;
+ }
+
+ section#productos {
+    grid-area: productos;     
+ }
+ 
+
+ @media only screen and (min-width: 768px) {
+	#grilla {
+            grid-template-columns: repeat(4, 1fr);
+      }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+	#grilla {
+            grid-template-columns: repeat(3, 1fr);
+      }
+}
+
